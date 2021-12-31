@@ -1,8 +1,4 @@
-<p align="center">
-  <a href="https://aluiziodeveloper.com.br/">
-    <img alt="Aluizio Developer" src="https://aluiziodeveloper.com.br/assets/img/icon.png" width="200" />
-  </a>
-</p>
+
 <h2 align="center">
 Informação sobre tecnologia, dicas, tutoriais, mini-cursos e muito mais.
 </h2>
@@ -18,21 +14,16 @@ Este repositório Git é a estrutura inicial já com toda a configuração bási
 Faça um clone deste repositório e instale no seu ambiente de desenvolvimento usando o seguinte comando no seu terminal (escolha um diretório apropriado):
 
 ```shell
-git clone https://github.com/aluiziodeveloper/curso-reactjs-instalacao-app-gitcollection.git
+git clone https://github.com/JonathSilva/GithubRepositories.git
 ```
 
 Após clonar o conteúdo do repositório, acesse o diretório criado e efetue a instalação das dependências:
 
 ```shell
-cd curso-reactjs-instalacao-app-gitcollection
+cd GithubRepositories
 
-npm install
+yarn
 ```
 
-Após essa instalação execute a aplicação com o comando `npm start`. A aplicação estará disponível no endereço `http://localhost:3000`.
+Após essa instalação execute a aplicação com o comando `yarn dev`. A aplicação estará disponível no endereço `http://localhost:3000`.
 
-## Contato
-
-[Site Aluizio Developer](https://aluiziodeveloper.com.br)
-
-[YouTube](https://www.youtube.com/jorgealuizio)
