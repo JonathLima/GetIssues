@@ -1,6 +1,6 @@
 # <div align="center">GitHub Repositiory</div>
 
-#### <div align="center"> Website: </br> ``Não possui``** </div>
+#### <div align="center"> Website: </br> ``🚧 Em Construção 🚧`` </div>
 
 <p align="center">
 
@@ -39,7 +39,7 @@
 
 ## 🚀 Sobre o Projeto
 
-Este projeto é do curso realizado na udemy pelo professor [Aluizio Develoer](https://github.com/aluiziodeveloper) consiste em criar um site para listar repositorios do github.
+Este projeto é do curso realizado na [udemy](https://www.udemy.com/course/curso-pratico-react-e-nextjs-essencial-com-typescript/) pelo professor [Aluizio Developer](https://github.com/aluiziodeveloper) consiste em criar um site para listar repositoriós do github.
 
 ## 🔨 Tecnologias:
 
