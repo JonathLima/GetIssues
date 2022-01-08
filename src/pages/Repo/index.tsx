@@ -29,7 +29,7 @@ interface GithubIssue {
   };
 }
 
-export const Repo: React.FC = () => {
+const Repo: React.FC = () => {
   const [repository, Setrepository] = React.useState<GithubRepository | null>(
     null,
   );
@@ -87,17 +87,18 @@ export const Repo: React.FC = () => {
       )}
 
       <R.Issues>
-        {issues.map(issue => {
-          console.log(issue);
+        {issues.map(issue => (
           <a href={issue.html_url} key={issue.id}>
             <div>
               <strong>{issue.title}</strong>
               <p>{issue.user.login}</p>
             </div>
             <FiChevronRight size={20} />
-          </a>;
-        })}
+          </a>
+        ))}
       </R.Issues>
     </>
   );
 };
+
+export default Repo;

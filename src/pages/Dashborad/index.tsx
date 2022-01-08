@@ -14,7 +14,7 @@ interface GithubRepository {
   };
 }
 
-export const Dashboard: React.FC = () => {
+const Dashboard: React.FC = () => {
   const [repos, setRepos] = React.useState<GithubRepository[]>(() => {
     const storageRepos = localStorage.getItem('@GitCollection:repositories');
 
@@ -25,6 +25,7 @@ export const Dashboard: React.FC = () => {
   });
   const [newRepo, setNewRepo] = React.useState('');
   const [inputError, setInputError] = React.useState('');
+  const formEl = React.useRef<HTMLFormElement | null>(null);
 
   React.useEffect(() => {
     localStorage.setItem('@GitCollection:repositories', JSON.stringify(repos));
@@ -42,11 +43,19 @@ export const Dashboard: React.FC = () => {
       setInputError('Informe o username/repositório');
       return;
     }
-    const response = await api.get<GithubRepository>(`repos/${newRepo}`);
 
-    const repository = response.data;
-    setRepos([...repos, repository]);
-    setNewRepo('');
+    try {
+      const response = await api.get<GithubRepository>(`repos/${newRepo}`);
+
+      const repository = response.data;
+
+      setRepos([...repos, repository]);
+      formEl.current?.reset();
+      setNewRepo('');
+      setInputError('');
+    } catch {
+      setInputError('Repositorio não encontrado no Github');
+    }
   }
 
   return (
@@ -54,7 +63,11 @@ export const Dashboard: React.FC = () => {
       <D.Logo src={logo} alt="GitCollection" />
       <D.Title>Catálogo de repositórios do Github</D.Title>
 
-      <D.Form hasError={Boolean(inputError)} onSubmit={handleAddRepo}>
+      <D.Form
+        ref={formEl}
+        hasError={Boolean(inputError)}
+        onSubmit={handleAddRepo}
+      >
         <input
           placeholder="username/repository_name"
           onChange={handleInputChange}
@@ -63,10 +76,10 @@ export const Dashboard: React.FC = () => {
       </D.Form>
       {inputError && <D.Error>{inputError}</D.Error>}
       <D.Repos>
-        {repos.map(repository => (
+        {repos.map((repository, index) => (
           <Link
             to={`/repositories/${repository.full_name}`}
-            key={repository.full_name}
+            key={repository.full_name + index}
           >
             <img
               src={repository.owner.avatar_url}
@@ -83,3 +96,5 @@ export const Dashboard: React.FC = () => {
     </>
   );
 };
+
+export default Dashboard;
