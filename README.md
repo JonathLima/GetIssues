@@ -39,7 +39,7 @@
 ## 🎨 Layout
 
 <div>
-<img align="center" margin:"0px" "Get-Issues" src="https://i.imgur.com/PgtmYNq.png">
+<img align="center" margin:"0px" "Get-Issues" src="https://i.imgur.com/K2cDPG5.png">
 <div>
 
 ## 🚀 Sobre o Projeto
