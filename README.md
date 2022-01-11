@@ -1,6 +1,6 @@
-## <div align="center">
+<div align="center">
 <img margin:"0px" "Get-Issues" width="200px" height="110px" src="https://i.imgur.com/XRSJ7GV.png">
-</div>
+</div><hr/>
 
 #### <div align="center"> Website: </br> ``githubrepositories.vercel.app`` </div>
 
