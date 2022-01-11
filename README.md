@@ -40,7 +40,7 @@
 
 <div align="center">
 <img margin:"0px" "Get-Issues" src="https://i.imgur.com/K2cDPG5.png">
-<div>
+</div>
 
 ## 🚀 Sobre o Projeto
 
