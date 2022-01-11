@@ -1,7 +1,7 @@
 # <div align="center">GitHub Repositiory</div>
 
-<div>
-  <img align="center" margin:"0px" "Jonath-Portifolio" src="https://i.imgur.com/XRSJ7GV.png">
+<div align="center">
+  <img margin:"0px" "Jonath-Portifolio" src="https://i.imgur.com/XRSJ7GV.png">
 </div>
 
 
