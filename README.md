@@ -1,5 +1,5 @@
 <div align="center">
-<img margin:"0px" "Get-Issues" width="250px" height="155px" src="https://i.imgur.com/XRSJ7GV.png">
+<img margin:"0px" "Get-Issues" width="250px" height="135px" src="https://i.imgur.com/XRSJ7GV.png">
 </div><hr/>
 
 #### <div align="center"> Website: </br> ``githubrepositories.vercel.app`` </div>
