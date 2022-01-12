@@ -41,7 +41,7 @@
 
 ## 🚀 Sobre o Projeto
 
-Este projeto é do curso realizado na [udemy](https://www.udemy.com/course/curso-pratico-react-e-nextjs-essencial-com-typescript/) pelo professor [Aluizio Developer](https://github.com/aluiziodeveloper) consiste em criar um site para listar repositoriós do github.
+Este projeto é do curso realizado na [Udemy](https://www.udemy.com/course/curso-pratico-react-e-nextjs-essencial-com-typescript/) pelo professor [Aluizio Developer](https://github.com/aluiziodeveloper) consiste em criar um site para listar repositoriós do github.
 
 ## 🔨 Tecnologias:
 
