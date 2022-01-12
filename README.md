@@ -64,10 +64,10 @@ Para clonar e executar este aplicativo, você precisará de [Git](https://git-sc
 
 ```bash
 # Clone este repositório
-$ git clone https://github.com/JonathSilva/GithubRepositories.git
+$ git clone https://github.com/JonathSilva/GetIssues.git
 
 # Acesse a pasta do projeto no terminal/cmd
-$ cd GithubRepositories
+$ cd GetIssues
 
 ```
 
